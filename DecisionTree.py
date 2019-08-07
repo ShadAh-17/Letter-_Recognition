@@ -1,5 +1,3 @@
-# author: @romulogmlima
-
 import pandas
 import matplotlib.pyplot as plt
 from yellowbrick.classifier import ConfusionMatrix
