@@ -1,5 +1,3 @@
-# author: @romulogmlima
-
 import pandas
 from yellowbrick.classifier import ConfusionMatrix
 import matplotlib.pyplot as plt
@@ -38,19 +36,19 @@ dataset = pandas.read_csv(url, names=names)
 # print(dataset.shape)
 
 # Generate various summary statistics
-# print(dataset.describe())
+print(dataset.describe())
 
 # class distribution
-# print(dataset.groupby('class').size())
+print(dataset.groupby('class').size())
 
 # histograms
-# dataset.hist()
-# plt.show()
+dataset.hist()
+plt.show()
 
 X = dataset.iloc[:, 1:17]
 Y = dataset.select_dtypes(include=[object])
 
-#Y.Class.unique()
+Y.Class.unique()
 
 #le = preprocessing.LabelEncoder()
 
